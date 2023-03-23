@@ -45,7 +45,7 @@ img {
 }
 
 .counter-div {
-  width: 40rem;
+  width: 60rem;
   border: 1px solid var(--grey);
   padding: 1rem;
   background-color: var(--light-blue);
@@ -76,6 +76,14 @@ img {
   font-weight: bold;
 }
 
+.buttons button:nth-child(5) {
+  background: var(--color-primary);
+}
+
+.buttons button:nth-child(4) {
+  background: var(--color-sec);
+}
+
 .buttons button:nth-child(3) {
   background: green;
 }
@@ -87,3 +95,4 @@ img {
 .buttons button:nth-child(1) {
   background: red;
 }
+

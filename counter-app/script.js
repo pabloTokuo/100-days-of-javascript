@@ -14,8 +14,20 @@ buttons.addEventListener("click", (e) => {
     setColor();
   }
   if(e.target.classList.contains("reset")) {
-    count.innerHTML=0;
+    count.innerHTML = 0;
     setColor();
+  }
+  if(e.target.classList.contains("max")) {
+    count.innerHTML = 999;
+    setColor();
+  }
+  if(e.target.classList.contains("min")) {
+    count.innerHTML = -999;
+    setColor();
+  }
+  if(count.innerHTML === "1000") {
+    count.innerHTML = "Max Number";
+    count.style.color = "red";
   }
 })
 
@@ -23,12 +35,11 @@ function setColor() {
   if(count.innerHTML > 0) {
     count.style.color = "green";
   } else if (count.innerHTML < 0) {
-    count.style.color = "red";
+    count.style.color = "orangered";
   } else {
     count.style.color = "white";
   }
 }
-
 
 // add.addEventListener("click", () => {
 //   count.innerHTML++;
