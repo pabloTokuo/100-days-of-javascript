@@ -1,0 +1,67 @@
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.div-generator {
+  color: white;
+  width: 60rem;
+  padding: 4rem;
+  text-align: center;
+  border: 1px solid black;
+  background-color: var(--light-blue);
+  border-radius: 5px;
+}
+
+.div-generator > * {
+  margin-bottom: 3rem;
+}
+
+.div-generator span {
+  font-size: 5rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid white;
+}
