@@ -102,9 +102,22 @@ form button:hover {
 
 @keyframes slide {
   0% {
-    transform: translateY(-30);
+    transform: translateY(-30rem);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slide-up ease .8s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50rem);
   }
 }
